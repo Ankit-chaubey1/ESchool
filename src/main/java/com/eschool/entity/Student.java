@@ -19,4 +19,6 @@ public class Student {
     @JoinColumn(name = "user_id")
 
     private User user; // Links the student record to their login account
+
+
 }
