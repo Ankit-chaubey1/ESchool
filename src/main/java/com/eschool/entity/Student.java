@@ -15,7 +15,8 @@ public class Student {
     private String className;   // e.g., "Class 10"
     private String section;     // e.g., "A"
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "user_id")
+
     private User user; // Links the student record to their login account
 }

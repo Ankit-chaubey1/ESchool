@@ -20,4 +20,6 @@ public class Appointment {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User appliedBy; // Links back to the User who booked it
+
+
 }

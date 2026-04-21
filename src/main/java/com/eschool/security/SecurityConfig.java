@@ -43,8 +43,12 @@ public class SecurityConfig {
                         .requestMatchers("/api/appointments/admin/**").hasAuthority("ROLE_ADMIN")
                         .requestMatchers("/api/appointments/book").hasAuthority("ROLE_APPLICANT")
                         .requestMatchers("/api/admin/**").hasAuthority("ROLE_ADMIN")
+                        .requestMatchers("/api/attendance/mark/**").hasAuthority("ROLE_ADMIN")
+                        .requestMatchers("/api/attendance/student/**").authenticated()
                         // APPLICANTS can book
                         .requestMatchers("/api/appointments/book", "/api/appointments/my").hasRole("APPLICANT")
+                        // SecurityFilterChain ke andar check karo
+
                         .anyRequest().authenticated()
                 );
 
