@@ -1,0 +1,59 @@
+MASTER PROMPT FOR CLAUDE (FRONTEND GENERATION)
+**"I am attaching my Spring Boot backend source code for an eSchool Management System. Please perform a deep analysis of the Controllers, Entities, DTOs, and Security configurations to build a production-ready React frontend using Tailwind CSS.
+
+🛠 Core Requirements:
+Authentication & Security: * Implement JWT-based authentication.
+
+Create a professional Login Page.
+
+Store the JWT token securely (localStorage/Cookies) and attach it to the 'Authorization' header for all API calls.
+
+Implement Role-Based Redirection:
+
+ROLE_ADMIN -> Admin Dashboard
+
+ROLE_TEACHER -> Teacher Dashboard
+
+ROLE_STUDENT -> Student Dashboard
+
+ROLE_APPLICANT (Parent) -> Application/Booking Dashboard
+
+Dashboard Features (Based on my Backend Logic):
+
+Admin: User management (Create Teacher/Student), Fee verification, and Appointment management.
+
+Teacher: Attendance marking (Bulk), Quiz creation, and Result entry.
+
+Student: View Attendance history, Give Online Quizzes, and view Results.
+
+Applicant: Book appointments and check status.
+
+API Integration: * Use Axios for all communications.
+
+Base URL: http://localhost:9090.
+
+Handle 401 (Unauthorized) and 403 (Forbidden) errors gracefully.
+
+Notification System (Upcoming - Placeholder Required):
+
+Add a Notification Bell icon in the Navbar for all roles.
+
+Create a dummy NotificationService that mimics fetching alerts like 'New Quiz Assigned' or 'Fee Paid'.
+
+Include a 'Mark as Read' UI functionality.
+
+Crucial: Since the backend doesn't have a Notification entity yet, please provide a suggested Notification Entity, Repository, and Controller (Java code) in a separate text block so I can add it to my Spring Boot project later.
+
+Future-Proofing & Feature Placeholders (Commented-out UI):
+
+Profile Image: In the User Profile section, add an 'Upload Photo' UI with a placeholder function for a MultipartFile API.
+
+Fee PDF: In the Fee history table, add a 'Download Receipt' button for 'PAID' records.
+
+Report Card: In the Student Result section, add a 'Download PDF' button.
+
+State Management: Use React Context API to manage global state (User info, Authentication status, and Notifications).
+
+UX/UI: Use Tailwind CSS for a clean, modern, and responsive school-themed design. Use React-Hot-Toast for success/error popups.
+
+Please provide the complete code in a well-organized folder structure and explain how to install dependencies and run the project."
